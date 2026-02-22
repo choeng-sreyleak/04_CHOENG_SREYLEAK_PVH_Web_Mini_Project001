@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<style>
+ * { font-family: 'Inter', sans-serif; } </style>
+</head
+<body>
+
+<header>
+<nav class="fixed w-full z-20 top-0 start-0 border-b border-default bg-white shadow-md ">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" /> -->
+      <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Cyber</span>
+  </a>
+  <div class="flex items-center md:order-0">
+    <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="flex items-center justify-center md:hidden text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-2 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm w-10 h-10 focus:outline-none">
+      <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+      <span class="sr-only">Search</span>
+    </button>
+    <label for="input-group-1" class="sr-only">Your Email</label>
+    <div class="relative hidden md:block">
+      <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+        <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+      </div>
+      <input type="text" id="input-group-1" class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand rounded-sm px-2.5 py-2 shadow-xs placeholder:text-body bg-gray-100" placeholder="Search">
+    </div>
+    <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-search" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+    </button>
+  </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+      <div class="relative mt-3 md:hidden">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+          <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+        </div>
+        <input type="text" id="input-group-1" class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium  text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body " placeholder="Search">
+      </div>
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+        <li>
+          <a href="#" class="block py-2 px-3 text-black bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact Us</a>
+        </li>
+         <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Blog</a>
+        </li>
+         <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
+            <span class="sr-only">Fav</span>
+        <img class="w-5 h-5 " src="/src/icon/image.png" alt="heart-icon-pic">
+          </a>
+        </li>
+         <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
+             <span class="sr-only">Shopping</span>
+        <img class="w-5 h-5 " src="/src/icon/shopping.png" alt="shopping-icon-pic">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
+             <span class="sr-only">Shopping</span>
+        <img class="w-5 h-5 " src="/src/icon/pf.png" alt="pf-icon-pic">
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</header>
+<main>
+<main class="pt-16">
+  <section  class="pl-[50px] pr-[50px] pt-[32px] pb-[56px]">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+      <!-- Image gallery -->
+      <div class="flex gap-4 fade-up">
+        <!-- Thumbnails -->
+        <div class="flex flex-col gap-3">
+          <div class="thumb active w-16 h-20 flex items-center justify-center">
+            <img src="/src/images/thunmailIphone.png" alt="Deep Purple" class="w-12 object-contain">
+          </div>
+          <div class="thumb w-16 h-20 flex items-center justify-center">
+            <img src="/src/images/Iphone1.png" alt="backIP" class="w-12 object-contain">
+          </div>
+          <div class="thumb w-16 h-20 flex items-center justify-center">
+            <img src="/src/images/iphonw2.png" alt="Silver" class="w-12 object-contain">
+          </div>
+          <div class="thumb w-16 h-20 flex items-center justify-center">
+            <img src="/src/images/iphone4.png" alt="Space Black" class="w-12 object-contain">
+          </div>
+        </div>
+        <!-- Main image -->
+        <div class="flex-1 bg-gray-10 rounded-2xl flex items-center justify-center" style="min-height:420px;">
+          <img id="mainImage" src="/src/images/thunmailIphone.png" alt="iPhone 14 Pro Max" class="w-72 object-contain drop-shadow-2xl">
+        </div>
+      </div>
+
+      <!-- Product info -->
+      <div class="fade-up-2">
+        <h1 class="text-3xl font-bold mb-3">Apple iPhone 14 Pro Max</h1>
+        <div class="flex items-baseline gap-3 mb-5">
+          <span class="text-2xl font-semibold">$1399</span>
+          <span class="text-gray-400 line-through text-lg">$1499</span>
+        </div>
+
+        <!-- Color selector -->
+        <div class="mb-5">
+          <p class="text-xs font-medium uppercase tracking-wider text-gray-500 mb-2">Select color</p>
+          <div class="flex gap-2">
+            <div class="color-dot active" style="background:#2d1b52;" title="Deep Purple"></div>
+            <div class="color-dot" style="background:#1a1a1a;" title="Space Black"></div>
+            <div class="color-dot" style="background:#c13232;" title="Red"></div>
+            <div class="color-dot" style="background:#d4a847;" title="Gold"></div>
+            <div class="color-dot" style="background:#d1d5db;" title="Silver"></div>
+          </div>
+        </div>
+
+        <!-- Storage selector -->
+        <div class="mb-6">
+          <div class="flex gap-2 flex-wrap">
+            <button class="storage-btn">128GB</button>
+            <button class="storage-btn">256GB</button>
+            <button class="storage-btn">512GB</button>
+            <button class="storage-btn active">1TB</button>
+          </div>
+        </div>
+
+        <!-- Quick spec grid -->
+        <div class="grid grid-cols-4 sm:grid-cols-4 gap-3 mb-6">
+          <div class="bg-gray-50 rounded-xl p-3 text-center">
+            <div class="text-xs text-gray-400 mb-1">Screen size</div>
+            <div class="text-sm font-semibold">6.7"</div>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-3 text-center">
+            <div class="text-xs text-gray-400 mb-1">Chip</div>
+            <div class="text-sm font-semibold">A16 Bionic</div>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-3 text-center">
+            <div class="text-xs text-gray-400 mb-1">Cores</div>
+            <div class="text-sm font-semibold">6</div>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-3 text-center">
+            <div class="text-xs text-gray-400 mb-1">Battery</div>
+            <div class="text-sm font-semibold">4323 mAh</div>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-3 text-center">
+            <div class="text-xs text-gray-400 mb-1">Main cam</div>
+            <div class="text-sm font-semibold">48+12 MP</div>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-3 text-center">
+            <div class="text-xs text-gray-400 mb-1">Front cam</div>
+            <div class="text-sm font-semibold">12 MP</div>
+          </div>
+        </div>
+
+        <p class="text-sm text-gray-500 leading-relaxed mb-6">
+          Enhanced capabilities thanks to the laser-enlarged display of 6.7" to interact with without recharging throughout the day. Incredible shutdowns to see, presented in bright lighting in the new improved 3 top cameras. And this year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.
+        </p>
+
+        <!-- CTA buttons -->
+        <div class="flex gap-3 mb-6">
+          <button class="flex-1 border-2 border-gray-900 text-gray-900 font-medium py-3 rounded-xl hover:bg-gray-900 hover:text-white transition-all duration-200">Add to Wishlist</button>
+          <button class="flex-1 bg-gray-900 text-white font-medium py-3 rounded-xl hover:bg-gray-700 transition-all duration-200">Add to Cart</button>
+        </div>
+
+        <!-- Delivery / stock badges -->
+        <div class="flex gap-6 text-sm text-gray-500">
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-truck"></i>
+            <!-- <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8l1 12h12L19 8"/></svg> -->
+            <div>
+              <div class="text-xs font-medium text-gray-800">Free Delivery</div>
+              <div class="text-xs">1-2 day</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-house"></i>
+            <!-- <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> -->
+            <div>
+              <div class="text-xs font-medium text-gray-800">In Stock</div>
+              <div class="text-xs">Today</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            <div>
+              <div class="text-xs font-medium text-gray-800">Guaranteed</div>
+              <div class="text-xs">1 year</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</main>
+  <footer>
+  <div class="self-stretch px-50 py-24 bg-black flex flex-col justify-center items-start gap-6">
+    <!-- Top content -->
+    <div class="self-stretch flex justify-between items-start flex-wrap">
+      <!-- Logo and description -->
+      <div class="flex flex-col gap-6">
+        <div class="flex items-center">
+          <span class="text-white font-semibold text-xl">Cyber</span>
+        </div>
+        <p class="w-96 text-stone-300 text-sm font-medium leading-6">
+          We are a residential interior design firm located in Portland. Our boutique-studio offers more than
+        </p>
+      </div>
+
+      <!-- Links  to others...-->
+      <div class="w-[623px] flex justify-between">
+        <div class="w-72 flex flex-col gap-2">
+      <a href="" class="text-white text-base font-semibold leading-4">Services</a>
+      <a  class="text-stone-300 text-sm leading-8" href="">Bonus program </a>
+          <a class="text-stone-300 text-sm leading-8" href="">Gift cards</a>
+          <a class="text-stone-300 text-sm leading-8" href="">Credit and payment</a>
+          <a class="text-stone-300 text-sm leading-8" href="">Service contracts</a>
+          <a class="text-stone-300 text-sm leading-8" href="">Non-cash account</a>
+          <a class="text-stone-300 text-sm leading-8" href="">Payment</a>
+        </div>
+        <div class="w-72 flex flex-col gap-2">
+          <a href=""  class="text-white text-base font-semibold leading-4">Assistance to the buyer</a>
+          <a href="" class="text-stone-300 text-sm leading-8">Find an order</a>
+          <a  href="" class="text-stone-300 text-sm leading-8">Terms of delivery</a>
+          <a  href="text-stone-300 text-sm leading-8">Exchange and return of goods</a>
+          <a  href="" class="text-stone-300 text-sm leading-8">Guarantee</a>
+          <a href=""  class="text-stone-300 text-sm leading-8">Frequently asked questions</a>
+          <a href=""  class="text-stone-300 text-sm leading-8">Terms of use of the site</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social icons -->
+    <div class="flex gap-4">
+      <a href="#" aria-label="Facebook">
+        <img src="/src/icon/fb.png" alt="Facebook Icon" class="w-6 h-6 " />
+      </a>
+      <a href="#" aria-label="Twitter">
+        <img src="/src/icon/twitter.png" alt="Twitter Icon" class="w-6 h-6" />
+      </a>
+      <a href="#" aria-label="Instagram">
+        <img src="/src/icon/instagram.png" alt="Instagram Icon" class="w-6 h-6" />
+      </a>
+      <a href="#" aria-label="tiktok">
+        <img src="/src/icon/tik-tok.png" alt="tiktok Icon" class="w-6 h-6" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+</body>
+</html>  
