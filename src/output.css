@@ -35,6 +35,7 @@
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-zinc-300: oklch(87.1% 0.006 286.286);
     --color-zinc-400: oklch(70.5% 0.015 286.067);
+    --color-zinc-500: oklch(55.2% 0.016 285.938);
     --color-neutral-50: oklch(98.5% 0 0);
     --color-neutral-100: oklch(97% 0 0);
     --color-neutral-200: oklch(92.2% 0 0);
@@ -275,6 +276,9 @@
   .start-0 {
     inset-inline-start: calc(var(--spacing) * 0);
   }
+  .end {
+    inset-inline-end: var(--spacing);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -415,6 +419,9 @@
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
+  }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
   }
   .h-20 {
     height: calc(var(--spacing) * 20);
@@ -723,6 +730,12 @@
   .rounded-\[5px\] {
     border-radius: 5px;
   }
+  .rounded-\[10px\] {
+    border-radius: 10px;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -819,6 +832,9 @@
   }
   .bg-\[url\(\'\/src\/images\/banner2\.png\'\)\] {
     background-image: url('/src/images/banner2.png');
+  }
+  .bg-\[url\(\'src\/images\/banner2\.png\'\)\] {
+    background-image: url('src/images/banner2.png');
   }
   .from-neutral-800 {
     --tw-gradient-from: var(--color-neutral-800);
@@ -939,6 +955,9 @@
   .pt-\[32px\] {
     padding-top: 32px;
   }
+  .pr-7 {
+    padding-right: calc(var(--spacing) * 7);
+  }
   .pr-12 {
     padding-right: calc(var(--spacing) * 12);
   }
@@ -959,6 +978,9 @@
   }
   .pb-\[56px\] {
     padding-bottom: 56px;
+  }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
   }
   .pl-14 {
     padding-left: calc(var(--spacing) * 14);
@@ -1132,6 +1154,9 @@
   .text-white {
     color: var(--color-white);
   }
+  .text-zinc-500 {
+    color: var(--color-zinc-500);
+  }
   .uppercase {
     text-transform: uppercase;
   }
@@ -1140,6 +1165,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-20 {
+    opacity: 20%;
   }
   .opacity-30 {
     opacity: 30%;

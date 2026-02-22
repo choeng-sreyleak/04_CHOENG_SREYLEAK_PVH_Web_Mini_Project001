@@ -1,281 +1,343 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/src/output.css" rel="stylesheet">
+  <link href="src/output.css" rel="stylesheet">
+  <title> Phone Shop </title>
   <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
   <!-- add cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<style>
- * { font-family: 'Inter', sans-serif; } </style>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
+
 <body>
-<header>
-<nav class="fixed w-full z-20 top-0 start-0 border-b border-default bg-white shadow-md ">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" /> -->
-      <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Cyber</span>
-  </a>
-  <div class="flex items-center md:order-0">
-    <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="flex items-center justify-center md:hidden text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-2 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm w-10 h-10 focus:outline-none">
-      <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
-      <span class="sr-only">Search</span>
-    </button>
-    <label for="input-group-1" class="sr-only">Your Email</label>
-    <div class="relative hidden md:block">
-      <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-        <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
-      </div>
-      <input type="text" id="input-group-1" class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand rounded-sm px-2.5 py-2 shadow-xs placeholder:text-body bg-gray-100" placeholder="Search">
-    </div>
-    <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-search" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
-    </button>
-  </div>
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
-      <div class="relative mt-3 md:hidden">
-        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-          <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+  <header>
+    <nav class="fixed w-full z-20 top-0 start-0 border-b border-default bg-white shadow-md ">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" /> -->
+          <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Cyber</span>
+        </a>
+        <div class="flex items-center md:order-0">
+          <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false"
+            class="flex items-center justify-center md:hidden text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-2 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm w-10 h-10 focus:outline-none">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <label for="input-group-1" class="sr-only">Your Email</label>
+          <div class="relative hidden md:block">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                  d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+              </svg>
+            </div>
+            <input type="text" id="input-group-1"
+              class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand rounded-sm px-2.5 py-2 shadow-xs placeholder:text-body bg-gray-100"
+              placeholder="Search">
+          </div>
+          <button data-collapse-toggle="navbar-search" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+            aria-controls="navbar-search" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+            </svg>
+          </button>
         </div>
-        <input type="text" id="input-group-1" class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium  text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body " placeholder="Search">
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+          <div class="relative mt-3 md:hidden">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                  d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+              </svg>
+            </div>
+            <input type="text" id="input-group-1"
+              class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium  text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body "
+              placeholder="Search">
+          </div>
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+            <li>
+              <a href="#" class="block py-2 px-3 text-black bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact
+                Us</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Blog</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
+                <span class="sr-only">Fav</span>
+                <img class="w-5 h-5 " src="src/icon/image.png" alt="heart-icon-pic">
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
+                <span class="sr-only">Shopping</span>
+                <img class="w-5 h-5 " src="src/icon/shopping.png" alt="shopping-icon-pic">
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
+                <span class="sr-only">pf</span>
+                <img class="w-5 h-5 " src="src/icon/pf.png" alt="pf-icon-pic">
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
       </div>
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
-        <li>
-          <a href="#" class="block py-2 px-3 text-black bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact Us</a>
-        </li>
-         <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Blog</a>
-        </li>
-         <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
-            <span class="sr-only">Fav</span>
-        <img class="w-5 h-5 " src="/src/icon/image.png" alt="heart-icon-pic">
-          </a>
-        </li>
-         <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
-             <span class="sr-only">Shopping</span>
-        <img class="w-5 h-5 " src="/src/icon/shopping.png" alt="shopping-icon-pic">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
-             <span class="sr-only">Shopping</span>
-        <img class="w-5 h-5 " src="/src/icon/pf.png" alt="pf-icon-pic">
-          </a>
-        </li>
-        
-      </ul>
-     
-    </div>
+    </nav>
 
-  </div>
-</nav>
- 
-</header>
+  </header>
 
-<main>
-  <section class="hero-section py-20 ">
-  <div class=" px-50 self-stretch  w-[100%]  bg-gradient-to-r from-neutral-800 to-neutral-800 inline-flex justify-between items-center flex-wrap content-center  ">
+  <main>
+    <section class="hero-section py-20 ">
+      <div
+        class=" px-50 self-stretch  w-[100%]  bg-gradient-to-r from-neutral-800 to-neutral-800 inline-flex justify-between items-center flex-wrap content-center  ">
         <div class="flex-1 min-w-96 inline-flex flex-col justify-start items-start gap-6">
-            <div class="self-stretch flex flex-col justify-start items-start gap-6">
-                <div class="self-stretch opacity-40 justify-start text-white text-2xl font-semibold  leading-8">Pro.Beyond.</div>
-                <div class="self-stretch justify-start"><span class="text-white text-8xl font-thin  leading-[72px]">IPhone 14 </span><span class="text-white text-8xl font-semibold  leading-[72px]">Pro</span></div>
+          <div class="self-stretch flex flex-col justify-start items-start gap-6">
+            <div class="self-stretch opacity-40 justify-start text-white text-2xl font-semibold  leading-8">Pro.Beyond.
             </div>
-            <div class="self-stretch justify-start text-neutral-400 text-lg font-medium  leading-6">Created to change everything for the better. For everyone</div>
-            <div data-icon="False" data-state="White Stroke" class="px-14 py-4 rounded-md outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2">
-                <div class="text-center justify-start text-white text-base font-medium  leading-6">Shop Now</div>
-            </div>
+            <div class="self-stretch justify-start"><span class="text-white text-8xl font-thin  leading-[72px]">IPhone
+                14 </span><span class="text-white text-8xl font-semibold  leading-[72px]">Pro</span></div>
+          </div>
+          <div class="self-stretch justify-start text-neutral-400 text-lg font-medium  leading-6">Created to change
+            everything for the better. For everyone</div>
+          <div data-icon="False" data-state="White Stroke"
+            class="px-14 py-4 rounded-md outline outline-1 outline-offset-[-1px] outline-white inline-flex justify-center items-center gap-2">
+            <div class="text-center justify-start text-white text-base font-medium  leading-6">Shop Now</div>
+          </div>
         </div>
         <div class="w-96 h-[632px] relative">
-            <img class="w-96 h-[632px] left-0 top-0 absolute" src="/src/images/phone.png" />
+          <img class="w-96 h-[632px] left-0 top-0 absolute" src="src/images/phone.png" />
         </div>
-    </div>
+      </div>
       <div class="self-stretch inline-flex justify-start items-start">
         <div class="flex-1 inline-flex flex-col justify-center items-end">
-            <div class="self-stretch h-80 pl-80 pr-12 relative bg-white inline-flex justify-end items-center overflow-hidden">
-                <img class="w-96 h-80 left-0 top-0 absolute" src="/src/images/pic1Side.png" placeholder="image-leftside1"/>
-                <div class="flex-1 max-w-96 inline-flex flex-col justify-center items-end gap-4">
-                    <div class="self-stretch justify-start text-black text-5xl font-medium  leading-10">Playstation 5</div>
-                    <div class="self-stretch justify-start text-neutral-400 text-sm font-medium  leading-6">Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.</div>
-                </div>
+          <div
+            class="self-stretch h-80 pl-80 pr-12 relative bg-white inline-flex justify-end items-center overflow-hidden">
+            <img class="w-96 h-80 left-0 top-0 absolute" src="src/images/pic1Side.png" placeholder="image-leftside1" />
+            <div class="flex-1 max-w-96 inline-flex flex-col justify-center items-end gap-4">
+              <div class="self-stretch justify-start text-black text-5xl font-medium  leading-10">Playstation 5</div>
+              <div class="self-stretch justify-start text-neutral-400 text-sm font-medium  leading-6">Incredibly
+                powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.</div>
             </div>
-            <div class="self-stretch h-64 inline-flex justify-start items-start">
-                <div class="flex-1 self-stretch pl-40 pr-12 relative bg-gray-200 flex justify-end items-center overflow-hidden">
-                    <div class="w-40 h-36 max-w-40 inline-flex flex-col justify-center items-center gap-2">
-                        <div class="self-stretch justify-start"><span class="text-black text-3xl font-light  leading-10">Apple <br/>AirPods </span><span class="text-black text-3xl font-medium  leading-10">Max</span></div>
-                        <div class="self-stretch justify-start text-neutral-400 text-sm font-medium  leading-6">Computational audio. Listen, it's powerful</div>
-                    </div>
-                    <img class="w-24 h-64 left-0 top-0 absolute" src="/src/images/whiteAirpode.png" />
-                </div>
-                <div class="flex-1 self-stretch pl-40 pr-12 relative bg-neutral-700 flex justify-end items-center overflow-hidden">
-                    <div class="w-40 h-36 max-w-44 inline-flex flex-col justify-center items-center gap-2">
-                        <div class="self-stretch justify-start"><span class="text-white text-3xl font-light  leading-10">Apple <br/>Vision </span><span class="text-white text-3xl font-medium  leading-10">Pro</span></div>
-                        <div class="self-stretch justify-start text-neutral-400 text-sm font-medium  leading-6">An immersive way to experience entertainment</div>
-                    </div>
-                    <img class="w-32 h-48 left-[136px] top-[231px] absolute origin-top-left rotate-180" src="/src/images/blackAirpode.png" />
-                </div>
+          </div>
+          <div class="self-stretch h-64 inline-flex justify-start items-start">
+            <div
+              class="flex-1 self-stretch pl-40 pr-12 relative bg-gray-200 flex justify-end items-center overflow-hidden">
+              <div class="w-40 h-36 max-w-40 inline-flex flex-col justify-center items-center gap-2">
+                <div class="self-stretch justify-start"><span class="text-black text-3xl font-light  leading-10">Apple
+                    <br />AirPods </span><span class="text-black text-3xl font-medium  leading-10">Max</span></div>
+                <div class="self-stretch justify-start text-neutral-400 text-sm font-medium  leading-6">Computational
+                  audio. Listen, it's powerful</div>
+              </div>
+              <img class="w-24 h-64 left-0 top-0 absolute" src="src/images/whiteAirpode.png" />
             </div>
+            <div
+              class="flex-1 self-stretch pl-40 pr-12 relative bg-neutral-700 flex justify-end items-center overflow-hidden">
+              <div class="w-40 h-36 max-w-44 inline-flex flex-col justify-center items-center gap-2">
+                <div class="self-stretch justify-start"><span class="text-white text-3xl font-light  leading-10">Apple
+                    <br />Vision </span><span class="text-white text-3xl font-medium  leading-10">Pro</span></div>
+                <div class="self-stretch justify-start text-neutral-400 text-sm font-medium  leading-6">An immersive way
+                  to experience entertainment</div>
+              </div>
+              <img class="w-32 h-48 left-[136px] top-[231px] absolute origin-top-left rotate-180"
+                src="src/images/blackAirpode.png" />
+            </div>
+          </div>
         </div>
-        <div class="flex-1 h-[580px] w-[100%] pl-14 pr-64 py-0 relative bg-gray-200 flex justify-start items-center gap-px overflow-hidden">
-            <div class="flex-1 max-w-96 inline-flex flex-col justify-start items-start gap-4">
-                <div class="self-stretch flex flex-col justify-start items-start gap-4">
-                    <div class="self-stretch justify-start"><span class="text-black text-6xl font-thin  leading-[56px]">Macbook </span><span class="text-black text-6xl font-medium  leading-[56px]">Air</span></div>
-                    <div class="self-stretch justify-start text-neutral-400 text-sm font-medium  leading-6">The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</div>
-                </div>
-                <div data-icon="False" data-state="Black Stroke" class="px-14 py-4 rounded-md outline outline-1 outline-offset-[-1px] outline-black inline-flex justify-center items-center gap-2">
-                    <div class="text-center justify-start text-black text-base font-medium  leading-6">Shop Now</div>
-                </div>
+        <div
+          class="flex-1 h-[580px] w-[100%] pl-14 pr-64 py-0 relative bg-gray-200 flex justify-start items-center gap-px overflow-hidden">
+          <div class="flex-1 max-w-96 inline-flex flex-col justify-start items-start gap-4">
+            <div class="self-stretch flex flex-col justify-start items-start gap-4">
+              <div class="self-stretch justify-start"><span
+                  class="text-black text-6xl font-thin  leading-[56px]">Macbook </span><span
+                  class="text-black text-6xl font-medium  leading-[56px]">Air</span></div>
+              <div class="self-stretch justify-start text-neutral-400 text-sm font-medium  leading-6">The new 15‑inch
+                MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</div>
             </div>
-            <div class="w-72 h-[502px] left-[428px] top-[49px] absolute">
-                    <img class="w-[660px] h-96 left-0 top-0 right-0 absolute" src="/src/images/macBook.png" />
-                </div>
+            <div data-icon="False" data-state="Black Stroke"
+              class="px-14 py-4 rounded-md outline outline-1 outline-offset-[-1px] outline-black inline-flex justify-center items-center gap-2">
+              <div class="text-center justify-start text-black text-base font-medium  leading-6">Shop Now</div>
+            </div>
+          </div>
+          <div class="w-72 h-[502px] left-[428px] top-[49px] absolute">
+            <img class="w-[660px] h-96 left-0 top-0 right-0 absolute" src="src/images/macBook.png" />
+          </div>
         </div>
-    </div>
+      </div>
     </section>
-<section class="browse_catagory pt-0 pb-20">
-  <div class="container mx-auto px-50 flex flex-col gap-8">
-    <!-- Header -->
-    <div class="flex justify-between items-center">
-      <h2 class="text-black text-2xl font-medium leading-8 tracking-tight">Browse By Category</h2>
-      <div class="flex gap-4">
-        <!-- optional navigation buttons -->
+    <section class="browse_catagory pt-0 pb-20">
+      <div class="container mx-auto px-50 flex flex-col gap-8">
+        <!-- Header -->
+        <div class="flex justify-between items-center">
+          <h2 class="text-black text-2xl font-medium leading-8 tracking-tight">Browse By Category</h2>
+          <div class="flex gap-4">
+            <!-- optional navigation buttons -->
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="flex flex-wrap gap-8">
+          <!-- Phones -->
+          <div
+            class="w-40 h-32 min-w-32 px-12 py-6 bg-gray-200 rounded-2xl flex flex-col justify-center items-center gap-2">
+            <a href="src/productpage.html">
+              <img src=" src/icon/phone.png" alt="Phone Icon" class="w-12 h-12" />
+              <p class="text-black text-base font-medium">Phones</p>
+            </a>
+          </div>
+
+          <!-- Smart Watches -->
+          <div
+            class="w-40 h-32 min-w-32 px-12 py-6 bg-gray-200 rounded-2xl flex flex-col justify-center items-center gap-2">
+            <img src=" src/icon/smartwatch.png" alt="Smart Watch Icon" class="w-12 h-12" />
+            <p class="text-black text-base font-medium">Smart Watches</p>
+          </div>
+
+          <!-- Cameras -->
+          <div
+            class="w-40 h-32 min-w-32 px-12 py-6 bg-gray-200 rounded-2xl flex flex-col justify-center items-center gap-2">
+            <img src="src/icon/camera.png" alt="Camera Icon" class="w-12 h-12" />
+            <p class="text-black text-base font-medium">Cameras</p>
+          </div>
+
+          <!-- Headphones -->
+          <div
+            class="w-40 h-32 min-w-32 px-12 py-6 bg-gray-200 rounded-2xl flex flex-col justify-center items-center gap-2">
+            <img src="src/icon/music.png" alt="Headphones Icon" class="w-12 h-12" />
+            <p class="text-black text-base font-medium">Headphones</p>
+          </div>
+
+          <!-- Computers -->
+          <div
+            class="w-40 h-32 min-w-32 px-12 py-6 bg-gray-200 rounded-2xl flex flex-col justify-center items-center gap-2">
+            <img src="src/icon/monitor.png" alt="Computer Icon" class="w-12 h-12" />
+            <p class="text-black text-base font-medium">Computers</p>
+          </div>
+
+          <!-- Gaming -->
+          <div
+            class="w-40 h-32 min-w-32 px-12 py-6 bg-gray-200 rounded-2xl flex flex-col justify-center items-center gap-2">
+            <img src="src/icon/gaming.png" alt="Gaming Icon" class="w-12 h-12" />
+            <p class="text-black text-base font-medium">Gaming</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+    <section class="py-20 bg-[url('src/images/banner2.png')] bg-cover bg-center">
+      <div class="container mx-auto px-8 flex flex-col items-center gap-10 text-center">
+        <!-- Heading -->
+        <div>
+          <h2 class="text-white text-7xl font-thin leading-[72px]">
+            Big Summer <span class="font-medium">Sale</span>
+          </h2>
+          <p class="text-neutral-200 text-base font-normal leading-8 mt-4">
+            Commodo fames vitae vitae leo mauris in. Eu consequat.
+          </p>
+        </div>
 
-    <!-- Categories -->
-    <div class="flex flex-wrap gap-8">
-      <!-- Phones -->
-      <div class="w-40 h-32 min-w-32 px-12 py-6 bg-gray-200 rounded-2xl flex flex-col justify-center items-center gap-2">
-           <a href="/src/productpage.html">
-        <img src="/src/icon/phone.png" alt="Phone Icon" class="w-12 h-12" />
-        <p class="text-black text-base font-medium">Phones</p>
-      </a>
+        <!-- Button -->
+
+        <div
+          class="px-14 py-4 rounded-md outline outline-1 outline-white inline-flex justify-center items-center gap-2">
+          <span class="text-white text-base font-medium leading-6"> Shop Now</span>
+        </div>
       </div>
-
-      <!-- Smart Watches -->
-      <div class="w-40 h-32 min-w-32 px-12 py-6 bg-gray-200 rounded-2xl flex flex-col justify-center items-center gap-2">
-        <img src="/src/icon/smartwatch.png" alt="Smart Watch Icon" class="w-12 h-12" />
-        <p class="text-black text-base font-medium">Smart Watches</p>
-      </div>
-
-      <!-- Cameras -->
-      <div class="w-40 h-32 min-w-32 px-12 py-6 bg-gray-200 rounded-2xl flex flex-col justify-center items-center gap-2">
-        <img src="/src/icon/camera.png" alt="Camera Icon" class="w-12 h-12" />
-        <p class="text-black text-base font-medium">Cameras</p>
-      </div>
-
-      <!-- Headphones -->
-      <div class="w-40 h-32 min-w-32 px-12 py-6 bg-gray-200 rounded-2xl flex flex-col justify-center items-center gap-2">
-        <img src="/src/icon/music.png" alt="Headphones Icon" class="w-12 h-12" />
-        <p class="text-black text-base font-medium">Headphones</p>
-      </div>
-
-      <!-- Computers -->
-      <div class="w-40 h-32 min-w-32 px-12 py-6 bg-gray-200 rounded-2xl flex flex-col justify-center items-center gap-2">
-        <img src="/src/icon/monitor.png" alt="Computer Icon" class="w-12 h-12" />
-        <p class="text-black text-base font-medium">Computers</p>
-      </div>
-
-      <!-- Gaming -->
-      <div class="w-40 h-32 min-w-32 px-12 py-6 bg-gray-200 rounded-2xl flex flex-col justify-center items-center gap-2">
-        <img src="/src/icon/gaming.png" alt="Gaming Icon" class="w-12 h-12" />
-        <p class="text-black text-base font-medium">Gaming</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="py-20 bg-[url('/src/images/banner2.png')] bg-cover bg-center">
-  <div class="container mx-auto px-8 flex flex-col items-center gap-10 text-center">
-    <!-- Heading -->
-    <div>
-      <h2 class="text-white text-7xl font-thin leading-[72px]">
-        Big Summer <span class="font-medium">Sale</span>
-      </h2>
-      <p class="text-neutral-200 text-base font-normal leading-8 mt-4">
-        Commodo fames vitae vitae leo mauris in. Eu consequat.
-      </p>
-    </div>
-
-    <!-- Button -->
-    
-       <div class="px-14 py-4 rounded-md outline outline-1 outline-white inline-flex justify-center items-center gap-2">
-      <span class="text-white text-base font-medium leading-6"> Shop Now</span>
-    </div>
-  </div>
-</section>
-
-
-</main>
+    </section>
+  </main>
   <footer>
-  <div class="self-stretch px-50 py-24 bg-black flex flex-col justify-center items-start gap-6">
-    <!-- Top content -->
-    <div class="self-stretch flex justify-between items-start flex-wrap">
-      <!-- Logo and description -->
-      <div class="flex flex-col gap-6">
-        <div class="flex items-center">
-          <span class="text-white font-semibold text-xl">Cyber</span>
+    <div class="self-stretch px-50 py-24 bg-black flex flex-col justify-center items-start gap-6">
+      <!-- Top content -->
+      <div class="self-stretch flex justify-between items-start flex-wrap">
+        <!-- Logo and description -->
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center">
+            <span class="text-white font-semibold text-xl">Cyber</span>
+          </div>
+          <p class="w-96 text-stone-300 text-sm font-medium leading-6">
+            We are a residential interior design firm located in Portland. Our boutique-studio offers more than
+          </p>
         </div>
-        <p class="w-96 text-stone-300 text-sm font-medium leading-6">
-          We are a residential interior design firm located in Portland. Our boutique-studio offers more than
-        </p>
+
+        <!-- Links  to others...-->
+        <div class="w-[623px] flex justify-between">
+          <div class="w-72 flex flex-col gap-2">
+            <a href="" class="text-white text-base font-semibold leading-4">Services</a>
+            <a class="text-stone-300 text-sm leading-8" href="">Bonus program </a>
+            <a class="text-stone-300 text-sm leading-8" href="">Gift cards</a>
+            <a class="text-stone-300 text-sm leading-8" href="">Credit and payment</a>
+            <a class="text-stone-300 text-sm leading-8" href="">Service contracts</a>
+            <a class="text-stone-300 text-sm leading-8" href="">Non-cash account</a>
+            <a class="text-stone-300 text-sm leading-8" href="">Payment</a>
+          </div>
+          <div class="w-72 flex flex-col gap-2">
+            <a href="" class="text-white text-base font-semibold leading-4">Assistance to the buyer</a>
+            <a href="" class="text-stone-300 text-sm leading-8">Find an order</a>
+            <a href="" class="text-stone-300 text-sm leading-8">Terms of delivery</a>
+            <a href="text-stone-300 text-sm leading-8">Exchange and return of goods</a>
+            <a href="" class="text-stone-300 text-sm leading-8">Guarantee</a>
+            <a href="" class="text-stone-300 text-sm leading-8">Frequently asked questions</a>
+            <a href="" class="text-stone-300 text-sm leading-8">Terms of use of the site</a>
+          </div>
+        </div>
       </div>
 
-      <!-- Links  to others...-->
-      <div class="w-[623px] flex justify-between">
-        <div class="w-72 flex flex-col gap-2">
-      <a href="" class="text-white text-base font-semibold leading-4">Services</a>
-      <a  class="text-stone-300 text-sm leading-8" href="">Bonus program </a>
-          <a class="text-stone-300 text-sm leading-8" href="">Gift cards</a>
-          <a class="text-stone-300 text-sm leading-8" href="">Credit and payment</a>
-          <a class="text-stone-300 text-sm leading-8" href="">Service contracts</a>
-          <a class="text-stone-300 text-sm leading-8" href="">Non-cash account</a>
-          <a class="text-stone-300 text-sm leading-8" href="">Payment</a>
-        </div>
-        <div class="w-72 flex flex-col gap-2">
-          <a href=""  class="text-white text-base font-semibold leading-4">Assistance to the buyer</a>
-          <a href="" class="text-stone-300 text-sm leading-8">Find an order</a>
-          <a  href="" class="text-stone-300 text-sm leading-8">Terms of delivery</a>
-          <a  href="text-stone-300 text-sm leading-8">Exchange and return of goods</a>
-          <a  href="" class="text-stone-300 text-sm leading-8">Guarantee</a>
-          <a href=""  class="text-stone-300 text-sm leading-8">Frequently asked questions</a>
-          <a href=""  class="text-stone-300 text-sm leading-8">Terms of use of the site</a>
-        </div>
+      <!-- Social icons -->
+      <div class="flex gap-4">
+        <a href="#" aria-label="Facebook">
+          <img src="src/icon/fb.png" alt="Facebook Icon" class="w-6 h-6 " />
+        </a>
+        <a href="#" aria-label="Twitter">
+          <img src="src/icon/twitter.png" alt="Twitter Icon" class="w-6 h-6" />
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="src/icon/instagram.png" alt="Instagram Icon" class="w-6 h-6" />
+        </a>
+        <a href="#" aria-label="tiktok">
+          <img src="src/icon/tik-tok.png" alt="tiktok Icon" class="w-6 h-6" />
+        </a>
       </div>
     </div>
-
-    <!-- Social icons -->
-    <div class="flex gap-4">
-      <a href="#" aria-label="Facebook">
-        <img src="/src/icon/fb.png" alt="Facebook Icon" class="w-6 h-6 " />
-      </a>
-      <a href="#" aria-label="Twitter">
-        <img src="/src/icon/twitter.png" alt="Twitter Icon" class="w-6 h-6" />
-      </a>
-      <a href="#" aria-label="Instagram">
-        <img src="/src/icon/instagram.png" alt="Instagram Icon" class="w-6 h-6" />
-      </a>
-      <a href="#" aria-label="tiktok">
-        <img src="/src/icon/tik-tok.png" alt="tiktok Icon" class="w-6 h-6" />
-      </a>
-    </div>
-  </div>
-</footer>
-  
+  </footer>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 
 </body>
-</html>  
+
+</html>

@@ -1,427 +1,564 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<style>
- * { font-family: 'Inter', sans-serif; } </style>
-</head
-<body>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title> Phone Details</title>
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+ <body>
 
 <header>
-<nav class="fixed w-full z-20 top-0 start-0 border-b border-default bg-white shadow-md ">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" /> -->
-      <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Cyber</span>
-  </a>
-  <div class="flex items-center md:order-0">
-    <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="flex items-center justify-center md:hidden text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-2 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm w-10 h-10 focus:outline-none">
-      <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
-      <span class="sr-only">Search</span>
-    </button>
-    <label for="input-group-1" class="sr-only">Your Email</label>
-    <div class="relative hidden md:block">
-      <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-        <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
-      </div>
-      <input type="text" id="input-group-1" class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand rounded-sm px-2.5 py-2 shadow-xs placeholder:text-body bg-gray-100" placeholder="Search">
-    </div>
-    <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-search" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
-    </button>
-  </div>
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
-      <div class="relative mt-3 md:hidden">
-        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-          <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+  <nav class="fixed w-full z-20 top-0 start-0 border-b border-default bg-white shadow-md ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" /> -->
+        <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Cyber</span>
+      </a>
+      <div class="flex items-center md:order-0">
+        <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false"
+          class="flex items-center justify-center md:hidden text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-2 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm w-10 h-10 focus:outline-none">
+          <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+              d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+          </svg>
+          <span class="sr-only">Search</span>
+        </button>
+        <label for="input-group-1" class="sr-only">Your Email</label>
+        <div class="relative hidden md:block">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+            </svg>
+          </div>
+          <input type="text" id="input-group-1"
+            class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand rounded-sm px-2.5 py-2 shadow-xs placeholder:text-body bg-gray-100"
+            placeholder="Search">
         </div>
-        <input type="text" id="input-group-1" class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium  text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body " placeholder="Search">
+        <button data-collapse-toggle="navbar-search" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+          aria-controls="navbar-search" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+          </svg>
+        </button>
       </div>
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
-        <li>
-          <a href="#" class="block py-2 px-3 text-black bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact Us</a>
-        </li>
-         <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Blog</a>
-        </li>
-         <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
-            <span class="sr-only">Fav</span>
-        <img class="w-5 h-5 " src="/src/icon/image.png" alt="heart-icon-pic">
-          </a>
-        </li>
-         <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
-             <span class="sr-only">Shopping</span>
-        <img class="w-5 h-5 " src="/src/icon/shopping.png" alt="shopping-icon-pic">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
-             <span class="sr-only">Shopping</span>
-        <img class="w-5 h-5 " src="/src/icon/pf.png" alt="pf-icon-pic">
-          </a>
-        </li>
-        
-      </ul>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+        <div class="relative mt-3 md:hidden">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+            </svg>
+          </div>
+          <input type="text" id="input-group-1"
+            class="block w-full ps-9 pe-3 py-2.5 bg-neutral-secondary-medium border border-default-medium  text-heading text-sm rounded-base focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body "
+            placeholder="Search">
+        </div>
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+          <li>
+            <a href="#" class="block py-2 px-3 text-black bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact
+              Us</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Blog</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
+              <span class="sr-only">Fav</span>
+              <img class="w-5 h-5 " src="/src/icon/image.png" alt="heart-icon-pic">
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
+              <span class="sr-only">Shopping</span>
+              <img class="w-5 h-5 " src="/src/icon/shopping.png" alt="shopping-icon-pic">
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
+              <span class="sr-only">Shopping</span>
+              <img class="w-5 h-5 " src="/src/icon/pf.png" alt="pf-icon-pic">
+            </a>
+          </li>
+
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 </header>
 <main>
-<main class="pt-16">
-  <section  class="pl-[50px] pr-[50px] pt-[32px] pb-[56px]">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+  <main class="pt-16">
+    <section class="pl-[50px] pr-[50px] pt-[32px] pb-[56px]">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-      <!-- Image gallery -->
-      <div class="flex gap-4 fade-up">
-        <!-- Thumbnails -->
-        <div class="flex flex-col gap-3">
-          <div class="thumb active w-16 h-20 flex items-center justify-center">
-            <img src="/src/images/thunmailIphone.png" alt="Deep Purple" class="w-12 object-contain">
+        <!-- Image gallery -->
+        <div class="flex gap-4 fade-up">
+          <!-- Thumbnails -->
+          <div class="flex flex-col gap-3">
+            <div class="thumb active w-16 h-20 flex items-center justify-center">
+              <img src="/src/images/thunmailIphone.png" alt="Deep Purple" class="w-12 object-contain">
+            </div>
+            <div class="thumb w-16 h-20 flex items-center justify-center">
+              <img src="/src/images/Iphone1.png" alt="backIP" class="w-12 object-contain">
+            </div>
+            <div class="thumb w-16 h-20 flex items-center justify-center">
+              <img src="/src/images/iphonw2.png" alt="Silver" class="w-12 object-contain">
+            </div>
+            <div class="thumb w-16 h-20 flex items-center justify-center">
+              <img src="/src/images/iphone4.png" alt="Space Black" class="w-12 object-contain">
+            </div>
           </div>
-          <div class="thumb w-16 h-20 flex items-center justify-center">
-            <img src="/src/images/Iphone1.png" alt="backIP" class="w-12 object-contain">
-          </div>
-          <div class="thumb w-16 h-20 flex items-center justify-center">
-            <img src="/src/images/iphonw2.png" alt="Silver" class="w-12 object-contain">
-          </div>
-          <div class="thumb w-16 h-20 flex items-center justify-center">
-            <img src="/src/images/iphone4.png" alt="Space Black" class="w-12 object-contain">
+          <!-- Main image -->
+          <div class="flex-1 bg-gray-10 rounded-2xl flex items-center justify-center" style="min-height:420px;">
+            <img id="mainImage" src="/src/images/thunmailIphone.png" alt="iPhone 14 Pro Max"
+              class="w-72 object-contain drop-shadow-2xl">
           </div>
         </div>
-        <!-- Main image -->
-        <div class="flex-1 bg-gray-10 rounded-2xl flex items-center justify-center" style="min-height:420px;">
-          <img id="mainImage" src="/src/images/thunmailIphone.png" alt="iPhone 14 Pro Max" class="w-72 object-contain drop-shadow-2xl">
+
+        <!-- Product info -->
+        <div class="fade-up-2">
+          <h1 class="text-3xl font-bold mb-3">Apple iPhone 14 Pro Max</h1>
+          <div class="flex items-baseline gap-3 mb-5">
+            <span class="text-2xl font-semibold">$1399</span>
+            <span class="text-gray-400 line-through text-lg">$1499</span>
+          </div>
+
+          <!-- Color selector -->
+          <div class="mb-5">
+            <p class="text-xs font-medium uppercase tracking-wider text-gray-500 mb-2">Select color</p>
+            <div class="flex gap-2">
+              <div class="color-dot active" style="background:#2d1b52;" title="Deep Purple"></div>
+              <div class="color-dot" style="background:#1a1a1a;" title="Space Black"></div>
+              <div class="color-dot" style="background:#c13232;" title="Red"></div>
+              <div class="color-dot" style="background:#d4a847;" title="Gold"></div>
+              <div class="color-dot" style="background:#d1d5db;" title="Silver"></div>
+            </div>
+          </div>
+
+          <!-- Storage selector -->
+          <div class="mb-6">
+            <div class="flex gap-2 flex-wrap">
+              <button class="storage-btn">128GB</button>
+              <button class="storage-btn">256GB</button>
+              <button class="storage-btn">512GB</button>
+              <button class="storage-btn active">1TB</button>
+            </div>
+          </div>
+
+          <!-- Quick spec grid -->
+          <div class="grid grid-cols-4 sm:grid-cols-4 gap-3 mb-6">
+            <div class="bg-gray-50 rounded-xl p-3 text-center">
+              <div class="text-xs text-gray-400 mb-1">Screen size</div>
+              <div class="text-sm font-semibold">6.7"</div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-3 text-center">
+              <div class="text-xs text-gray-400 mb-1">Chip</div>
+              <div class="text-sm font-semibold">A16 Bionic</div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-3 text-center">
+              <div class="text-xs text-gray-400 mb-1">Cores</div>
+              <div class="text-sm font-semibold">6</div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-3 text-center">
+              <div class="text-xs text-gray-400 mb-1">Battery</div>
+              <div class="text-sm font-semibold">4323 mAh</div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-3 text-center">
+              <div class="text-xs text-gray-400 mb-1">Main cam</div>
+              <div class="text-sm font-semibold">48+12 MP</div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-3 text-center">
+              <div class="text-xs text-gray-400 mb-1">Front cam</div>
+              <div class="text-sm font-semibold">12 MP</div>
+            </div>
+          </div>
+
+          <p class="text-sm text-gray-500 leading-relaxed mb-6">
+            Enhanced capabilities thanks to the laser-enlarged display of 6.7" to interact with without recharging
+            throughout the day. Incredible shutdowns to see, presented in bright lighting in the new improved 3 top
+            cameras. And this year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.
+          </p>
+          <!--  buttons -->
+          <div class="flex gap-3 mb-6">
+            <button
+              class="flex-1 border-2 border-gray-900 text-gray-900 font-medium py-3 rounded-xl hover:bg-gray-900 hover:text-white transition-all duration-200">Add
+              to Wishlist</button>
+            <button
+              class="flex-1 bg-gray-900 text-white font-medium py-3 rounded-xl hover:bg-gray-700 transition-all duration-200">Add
+              to Cart</button>
+          </div>
+
+          <!-- Delivery  -->
+          <div class="flex gap-6 text-sm text-gray-500">
+            <div class="flex items-center gap-2">
+              <i class="fa-regular fa-truck"></i>
+              <!-- <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8l1 12h12L19 8"/></svg> -->
+              <div>
+                <div class="text-xs font-medium text-gray-800">Free Delivery</div>
+                <div class="text-xs">1-2 day</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-regular fa-house"></i>
+              <!-- <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> -->
+              <div>
+                <div class="text-xs font-medium text-gray-800">In Stock</div>
+                <div class="text-xs">Today</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="1.8" viewBox="0 0 24 24">
+                <path
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+              <div>
+                <div class="text-xs font-medium text-gray-800">Guaranteed</div>
+                <div class="text-xs">1 year</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- detail subcribe section  -->
 
-      <!-- Product info -->
-      <div class="fade-up-2">
-        <h1 class="text-3xl font-bold mb-3">Apple iPhone 14 Pro Max</h1>
-        <div class="flex items-baseline gap-3 mb-5">
-          <span class="text-2xl font-semibold">$1399</span>
-          <span class="text-gray-400 line-through text-lg">$1499</span>
-        </div>
-
-        <!-- Color selector -->
-        <div class="mb-5">
-          <p class="text-xs font-medium uppercase tracking-wider text-gray-500 mb-2">Select color</p>
-          <div class="flex gap-2">
-            <div class="color-dot active" style="background:#2d1b52;" title="Deep Purple"></div>
-            <div class="color-dot" style="background:#1a1a1a;" title="Space Black"></div>
-            <div class="color-dot" style="background:#c13232;" title="Red"></div>
-            <div class="color-dot" style="background:#d4a847;" title="Gold"></div>
-            <div class="color-dot" style="background:#d1d5db;" title="Silver"></div>
-          </div>
-        </div>
-
-        <!-- Storage selector -->
-        <div class="mb-6">
-          <div class="flex gap-2 flex-wrap">
-            <button class="storage-btn">128GB</button>
-            <button class="storage-btn">256GB</button>
-            <button class="storage-btn">512GB</button>
-            <button class="storage-btn active">1TB</button>
-          </div>
-        </div>
-
-        <!-- Quick spec grid -->
-        <div class="grid grid-cols-4 sm:grid-cols-4 gap-3 mb-6">
-          <div class="bg-gray-50 rounded-xl p-3 text-center">
-            <div class="text-xs text-gray-400 mb-1">Screen size</div>
-            <div class="text-sm font-semibold">6.7"</div>
-          </div>
-          <div class="bg-gray-50 rounded-xl p-3 text-center">
-            <div class="text-xs text-gray-400 mb-1">Chip</div>
-            <div class="text-sm font-semibold">A16 Bionic</div>
-          </div>
-          <div class="bg-gray-50 rounded-xl p-3 text-center">
-            <div class="text-xs text-gray-400 mb-1">Cores</div>
-            <div class="text-sm font-semibold">6</div>
-          </div>
-          <div class="bg-gray-50 rounded-xl p-3 text-center">
-            <div class="text-xs text-gray-400 mb-1">Battery</div>
-            <div class="text-sm font-semibold">4323 mAh</div>
-          </div>
-          <div class="bg-gray-50 rounded-xl p-3 text-center">
-            <div class="text-xs text-gray-400 mb-1">Main cam</div>
-            <div class="text-sm font-semibold">48+12 MP</div>
-          </div>
-          <div class="bg-gray-50 rounded-xl p-3 text-center">
-            <div class="text-xs text-gray-400 mb-1">Front cam</div>
-            <div class="text-sm font-semibold">12 MP</div>
-          </div>
-        </div>
-
-        <p class="text-sm text-gray-500 leading-relaxed mb-6">
-          Enhanced capabilities thanks to the laser-enlarged display of 6.7" to interact with without recharging throughout the day. Incredible shutdowns to see, presented in bright lighting in the new improved 3 top cameras. And this year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.
-        </p>
-        <!--  buttons -->
-        <div class="flex gap-3 mb-6">
-          <button class="flex-1 border-2 border-gray-900 text-gray-900 font-medium py-3 rounded-xl hover:bg-gray-900 hover:text-white transition-all duration-200">Add to Wishlist</button>
-          <button class="flex-1 bg-gray-900 text-white font-medium py-3 rounded-xl hover:bg-gray-700 transition-all duration-200">Add to Cart</button>
-        </div>
-
-        <!-- Delivery  -->
-        <div class="flex gap-6 text-sm text-gray-500">
-          <div class="flex items-center gap-2">
-            <i class="fa-regular fa-truck"></i>
-            <!-- <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8l1 12h12L19 8"/></svg> -->
-            <div>
-              <div class="text-xs font-medium text-gray-800">Free Delivery</div>
-              <div class="text-xs">1-2 day</div>
+    <section
+      class="self-stretch  bg-white rounded-lg inline-flex flex-col justify-between items-center gap-8 pl-[50px] pr-[50px] pt-[32px] pb-[56px]">
+      <div class="self-stretch justify-start text-black text-2xl font-medium font-['Inter'] leading-8">Details</div>
+      <div class="self-stretch justify-start text-neutral-400 text-sm font-medium font-['Inter'] leading-6">Just as a
+        book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display.
+        Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts
+        for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities
+        Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture
+        provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion,
+        caused real admiration for many.</div>
+      <div class="self-stretch flex flex-col justify-start items-start gap-10">
+        <div class="self-stretch flex flex-col justify-start items-start gap-4">
+          <div class="self-stretch justify-start text-black text-xl font-medium font-['Inter'] leading-6">Screen</div>
+          <div class="self-stretch flex flex-col justify-start items-start gap-6">
+            <div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-end">
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">Screen diagonal</div>
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">6.7"</div>
+            </div>
+            <div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-end">
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">The screen resolution
+              </div>
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">2796x1290</div>
+            </div>
+            <div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-start">
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">The screen refresh
+                rate</div>
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">120 Hz</div>
+            </div>
+            <div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-start">
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">The pixel density
+              </div>
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">460 ppi</div>
+            </div>
+            <div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-start">
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">Screen type</div>
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">OLED</div>
+            </div>
+            <div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-start">
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">Additionally</div>
+              <div class="text-right justify-start text-black text-base font-normal font-['Inter'] leading-6">Dynamic
+                Island Always-On display  HDR display  True Tone  Wide color (P3)</div>
             </div>
           </div>
-          <div class="flex items-center gap-2">
-            <i class="fa-regular fa-house"></i>
-            <!-- <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> -->
-            <div>
-              <div class="text-xs font-medium text-gray-800">In Stock</div>
-              <div class="text-xs">Today</div>
+        </div>
+        <div class="self-stretch flex flex-col justify-start items-start gap-4">
+          <div class="self-stretch justify-start text-black text-xl font-medium font-['Inter'] leading-6">CPU</div>
+          <div class="self-stretch flex flex-col justify-start items-start gap-6">
+            <div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-start">
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">CPU</div>
+              <div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">A16 Bionic</div>
             </div>
-          </div>
-          <div class="flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
-            <div>
-              <div class="text-xs font-medium text-gray-800">Guaranteed</div>
-              <div class="text-xs">1 year</div>
+            <div
+              class="self-stretch pb-2 relative border-b-[0.50px] border-stone-300 inline-flex justify-between items-start">
+              <div class="justify-start text-black text-base font-normal leading-6">Number of cores</div>
+              <div class="justify-start text-black text-base font-normal leading-6">6</div>
+              <!-- <div class="w-[1038.14px] h-0 left-0 top-[32px] absolute outline outline-[0.50px] outline-offset-[-0.25px] outline-white"></div> -->
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- detail subcribe section  -->
+      <div
+        class="px-14 py-3 bg-white rounded-lg outline outline-1 outline-offset-[-1px] outline-neutral-600 inline-flex justify-center items-center gap-2">
+        <div class="text-center justify-start text-black text-sm font-medium font-['Inter'] leading-6">View More</div>
 
-  <section class="self-stretch  bg-white rounded-lg inline-flex flex-col justify-between items-center gap-8 pl-[50px] pr-[50px] pt-[32px] pb-[56px]">
-<div class="self-stretch justify-start text-black text-2xl font-medium font-['Inter'] leading-8">Details</div>
-<div class="self-stretch justify-start text-neutral-400 text-sm font-medium font-['Inter'] leading-6">Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.</div>
-<div class="self-stretch flex flex-col justify-start items-start gap-10">
-<div class="self-stretch flex flex-col justify-start items-start gap-4">
-<div class="self-stretch justify-start text-black text-xl font-medium font-['Inter'] leading-6">Screen</div>
-<div class="self-stretch flex flex-col justify-start items-start gap-6">
-<div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-end">
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">Screen diagonal</div>
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">6.7"</div>
-</div>
-<div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-end">
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">The screen resolution</div>
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">2796x1290</div>
-</div>
-<div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-start">
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">The screen refresh rate</div>
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">120 Hz</div>
-</div>
-<div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-start">
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">The pixel density</div>
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">460 ppi</div>
-</div>
-<div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-start">
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">Screen type</div>
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">OLED</div>
-</div>
-<div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-start">
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">Additionally</div>
-<div class="text-right justify-start text-black text-base font-normal font-['Inter'] leading-6">Dynamic Island Always-On display  HDR display  True Tone  Wide color (P3)</div>
-</div>
-</div>
-</div>
-<div class="self-stretch flex flex-col justify-start items-start gap-4">
-<div class="self-stretch justify-start text-black text-xl font-medium font-['Inter'] leading-6">CPU</div>
-<div class="self-stretch flex flex-col justify-start items-start gap-6">
-<div class="self-stretch pb-2 border-b-[0.50px] border-stone-300 inline-flex justify-between items-start">
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">CPU</div>
-<div class="justify-start text-black text-base font-normal font-['Inter'] leading-6">A16 Bionic</div>
-</div>
-<div class="self-stretch pb-2 relative border-b-[0.50px] border-stone-300 inline-flex justify-between items-start">
-<div class="justify-start text-black text-base font-normal leading-6">Number of cores</div>
-<div class="justify-start text-black text-base font-normal leading-6">6</div>
-<!-- <div class="w-[1038.14px] h-0 left-0 top-[32px] absolute outline outline-[0.50px] outline-offset-[-0.25px] outline-white"></div> -->
-</div>
-</div>
-</div>
-</div>
-<div class="px-14 py-3 bg-white rounded-lg outline outline-1 outline-offset-[-1px] outline-neutral-600 inline-flex justify-center items-center gap-2">
-<div class="text-center justify-start text-black text-sm font-medium font-['Inter'] leading-6">View More</div>
-
-<div class="w-6 h-6 left-0 top-0  flex">
-  <img src="/src/icon/arrowdown.png" alt="ArrViewmore" class=" w-[12px] h-[12px] self-center">
-</div>
-</div>
-</section>
+        <div class="w-6 h-6 left-0 top-0  flex">
+          <img src="/src/icon/arrowdown.png" alt="ArrViewmore" class=" w-[12px] h-[12px] self-center">
+        </div>
+      </div>
+    </section>
 
 
-  <!-- section review  -->
+    <!-- section review  -->
 
-    <section class="self-stretch inline-flex flex-col justify-between items-start gap-12 pl-[50px] pr-[50px] pt-[32px] pb-[56px]">
-<div class="self-stretch inline-flex justify-start items-center gap-8">
-<div class="flex-1 justify-start text-black text-2xl font-medium font-['Inter'] leading-8">Reviews</div>
-</div>
-<div class="self-stretch inline-flex gap-14 flex-wrap content-start">
-<div class="p-8 bg-neutral-50 rounded-3xl inline-flex flex-col justify-start items-center gap-4">
-<div class="self-stretch text-center justify-start text-black text-6xl font-medium font-['Inter'] leading-[56px]">4.8</div>
-<div class="self-stretch opacity-30 text-center justify-start text-black text-base font-medium font-['Inter'] leading-4">of 125 reviews</div>
-<!-- star  4.8  -->
-<div class="self-stretch inline-flex justify-between items-center">
-  <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-  <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-  <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-  <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
-</div>
-</div>
-<div class="flex-1 min-w-96 inline-flex flex-col justify-start items-start gap-6">
-<div class="self-stretch bg-white inline-flex justify-start items-center gap-4">
-<div class="w-36 justify-start text-black text-lg font-medium font-['Inter'] leading-4">Excellent</div>
-<div class="flex-1 bg-zinc-300 rounded-2xl flex justify-start items-start overflow-hidden">
-<div class="w-[656px] h-[5px] bg-amber-300 rounded-2xl"> </div>
-</div>
-<div class="flex justify-start items-center gap-2">
-<div class="w-7 opacity-40 text-right justify-start text-black text-base font-medium font-['Inter'] leading-4">100</div>
-</div>
-</div>
-<div class="self-stretch bg-white inline-flex justify-start items-center gap-4">
-<div class="w-36 justify-start text-black text-lg font-medium font-['Inter'] leading-4">Good</div>
-<div class="flex-1 bg-zinc-300 rounded-2xl flex justify-start items-start overflow-hidden">
-<div class="w-96 h-[5px] bg-amber-300 rounded-2xl"></div>
-</div>
-<div class="flex justify-start items-center gap-2">
-<div class="w-7 opacity-40 text-right justify-start text-black text-base font-medium font-['Inter'] leading-4"> 11</div>
-</div>
-</div>
-<div class="self-stretch bg-white inline-flex justify-start items-center gap-4">
-<div class="w-36 justify-start text-black text-lg font-medium font-['Inter'] leading-4">Average</div>
-<div class="flex-1 bg-zinc-300 rounded-2xl flex justify-start items-start overflow-hidden">
-<div class="w-36 h-[5px] bg-amber-300 rounded-2xl"></div>
-</div>
-<div class="flex justify-start items-center gap-2">
-<div class="w-7 opacity-40 text-right justify-start text-black text-base font-medium font-['Inter'] leading-4"> 3</div>
-</div>
-</div>
-<div class="self-stretch bg-white inline-flex justify-start items-center gap-4">
-<div class="w-36 justify-start text-black text-lg font-medium font-['Inter'] leading-4">Below Average</div>
-<div class="flex-1 bg-zinc-300 rounded-2xl flex justify-start items-start overflow-hidden">
-<div class="w-72 h-[5px] bg-amber-300 rounded-2xl"></div>
-</div>
-<div class="flex justify-start items-center gap-2">
-<div class="w-7 opacity-40 text-right justify-start text-black text-base font-medium font-['Inter'] leading-4"> 8</div>
-</div>
-</div>
-<div class="self-stretch bg-white inline-flex justify-start items-center gap-4">
-<div class="w-36 justify-start text-black text-lg font-medium font-['Inter'] leading-4">Poor</div>
-<div class="flex-1 bg-zinc-300 rounded-2xl flex justify-start items-start overflow-hidden">
-<div class="w-14 h-[5px] bg-amber-300 rounded-2xl"></div>
-</div>
-<div class="flex justify-start items-center gap-2">
-<div class="w-7 opacity-40 text-right justify-start text-black text-base font-medium font-['Inter'] leading-4"> 1</div>
-</div>
-</div>
-</div>
-</div>
-<!-- input cmt  -->
-<input  class="self-stretch px-4 py-6  outline outline-[0.50px] outline-offset-[-0.50px] outline-stone-300 inline-flex justify-start items-center rounded-3xl" placeholder="Leave a comment" >
+    <section
+      class="self-stretch inline-flex flex-col justify-between items-start gap-12 pl-[50px] pr-[50px] pt-[32px] pb-[56px]">
+      <div class="self-stretch inline-flex justify-start items-center gap-8">
+        <div class="flex-1 justify-start text-black text-2xl font-medium font-['Inter'] leading-8">Reviews</div>
+      </div>
+      <div class="self-stretch inline-flex gap-14 flex-wrap content-start">
+        <div class="p-8 bg-neutral-50 rounded-3xl inline-flex flex-col justify-start items-center gap-4">
+          <div
+            class="self-stretch text-center justify-start text-black text-6xl font-medium font-['Inter'] leading-[56px]">
+            4.8</div>
+          <div
+            class="self-stretch opacity-30 text-center justify-start text-black text-base font-medium font-['Inter'] leading-4">
+            of 125 reviews</div>
+          <!-- star  4.8  -->
+          <div class="self-stretch inline-flex justify-between items-center">
+            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+            <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+          </div>
+        </div>
+        <div class="flex-1 min-w-96 inline-flex flex-col justify-start items-start gap-6">
+          <div class="self-stretch bg-white inline-flex justify-start items-center gap-4">
+            <div class="w-36 justify-start text-black text-lg font-medium font-['Inter'] leading-4">Excellent</div>
+            <div class="flex-1 bg-zinc-300 rounded-2xl flex justify-start items-start overflow-hidden">
+              <div class="w-[656px] h-[5px] bg-amber-300 rounded-2xl"> </div>
+            </div>
+            <div class="flex justify-start items-center gap-2">
+              <div
+                class="w-7 opacity-40 text-right justify-start text-black text-base font-medium font-['Inter'] leading-4">
+                100</div>
+            </div>
+          </div>
+          <div class="self-stretch bg-white inline-flex justify-start items-center gap-4">
+            <div class="w-36 justify-start text-black text-lg font-medium font-['Inter'] leading-4">Good</div>
+            <div class="flex-1 bg-zinc-300 rounded-2xl flex justify-start items-start overflow-hidden">
+              <div class="w-96 h-[5px] bg-amber-300 rounded-2xl"></div>
+            </div>
+            <div class="flex justify-start items-center gap-2">
+              <div
+                class="w-7 opacity-40 text-right justify-start text-black text-base font-medium font-['Inter'] leading-4">
+                11</div>
+            </div>
+          </div>
+          <div class="self-stretch bg-white inline-flex justify-start items-center gap-4">
+            <div class="w-36 justify-start text-black text-lg font-medium font-['Inter'] leading-4">Average</div>
+            <div class="flex-1 bg-zinc-300 rounded-2xl flex justify-start items-start overflow-hidden">
+              <div class="w-36 h-[5px] bg-amber-300 rounded-2xl"></div>
+            </div>
+            <div class="flex justify-start items-center gap-2">
+              <div
+                class="w-7 opacity-40 text-right justify-start text-black text-base font-medium font-['Inter'] leading-4">
+                3</div>
+            </div>
+          </div>
+          <div class="self-stretch bg-white inline-flex justify-start items-center gap-4">
+            <div class="w-36 justify-start text-black text-lg font-medium font-['Inter'] leading-4">Below Average</div>
+            <div class="flex-1 bg-zinc-300 rounded-2xl flex justify-start items-start overflow-hidden">
+              <div class="w-72 h-[5px] bg-amber-300 rounded-2xl"></div>
+            </div>
+            <div class="flex justify-start items-center gap-2">
+              <div
+                class="w-7 opacity-40 text-right justify-start text-black text-base font-medium font-['Inter'] leading-4">
+                8</div>
+            </div>
+          </div>
+          <div class="self-stretch bg-white inline-flex justify-start items-center gap-4">
+            <div class="w-36 justify-start text-black text-lg font-medium font-['Inter'] leading-4">Poor</div>
+            <div class="flex-1 bg-zinc-300 rounded-2xl flex justify-start items-start overflow-hidden">
+              <div class="w-14 h-[5px] bg-amber-300 rounded-2xl"></div>
+            </div>
+            <div class="flex justify-start items-center gap-2">
+              <div
+                class="w-7 opacity-40 text-right justify-start text-black text-base font-medium font-['Inter'] leading-4">
+                1</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- input cmt  -->
+      <input
+        class="self-stretch px-4 py-6  outline outline-[0.50px] outline-offset-[-0.50px] outline-stone-300 inline-flex justify-start items-center rounded-3xl"
+        placeholder="Leave a comment">
 
-</section>
+    </section>
+    <!-- feedback -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-</main>
+    <section class=" pl-[50px] pr-[50px] pt-[32px] pb-[56px]">
+      <!-- vannda  -->
+      <section
+        class="self-stretch pl-4 pr-7 py-6 bg-neutral-50 rounded-[10px] inline-flex justify-start items-start gap-5">
+        <img class="w-14 h-14 rounded-full" src="/src/images/vannda.jpeg" />
+        <div class="flex-1 inline-flex flex-col justify-start items-start gap-2">
+          <div class="self-stretch flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch inline-flex justify-between items-start">
+              <div class="justify-center text-black text-base font-bold font-['Inter'] leading-6">Mann Vannda
+              </div>
+              <div class="opacity-20 text-right justify-center text-black text-sm font-medium font-['Inter'] leading-4">
+                24 January,2023</div>
+            </div>
+            <div class="inline-flex justify-center items-center">
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+            </div>
+          </div>
+          <div class="self-stretch justify-start text-zinc-500 text-base font-medium font-['Inter'] leading-6">I was a
+            bit nervous to be buying a secondhand phone from Amazon, but I couldn’t be happier with my purchase!! I have
+            a pre-paid data plan so I was worried that this phone wouldn’t connect with my data plan, since the new
+            phones don’t have the physical Sim tray anymore, but couldn’t have been easier! I bought an Unlocked black
+            iPhone 14 Pro Max in excellent condition and everything is PERFECT. It was super easy to set up and the
+            phone works and looks great. It truly was in excellent condition. Highly recommend!! ❤️❤️❤️❤️❤️❤️</div>
+        </div>
+      </section>
+      <!-- tena -->
+      <section
+        class="self-stretch pl-4 pr-7 py-6 bg-neutral-50 rounded-[10px] inline-flex justify-start items-start gap-5">
+        <img class="w-14 h-14 rounded-full" src="/src/images/tena.jpg" />
+        <div class="flex-1 inline-flex flex-col justify-start items-start gap-2">
+          <div class="self-stretch flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch inline-flex justify-between items-start">
+              <div class="justify-center text-black text-base font-bold font-['Inter'] leading-6">Tena Kimphun
+              </div>
+              <div class="opacity-20 text-right justify-center text-black text-sm font-medium font-['Inter'] leading-4">
+                24 January,2023</div>
+            </div>
+            <div class="inline-flex justify-center items-center">
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+            </div>
+          </div>
+          <div class="self-stretch justify-start text-zinc-500 text-base font-medium font-['Inter'] leading-6">This
+            phone has 1T storage and is durable. Plus all the new iPhones have a C port! Apple is phasing out the
+            current ones! (All about the Benjamin’s) So if you want a phone that’s going to last grab an iPhone 14 pro
+            max and get several cords and plugs. ❤️❤️❤️❤️❤️❤️</div>
+        </div>
+      </section>
+      <!-- Pich solika -->
+      <section
+        class="self-stretch pl-4 pr-7 py-6 bg-neutral-50 rounded-[10px] inline-flex justify-start items-start gap-5">
+        <img class="w-14 h-14 rounded-full" src="/src/images/pichsolika.jpg" />
+        <div class="flex-1 inline-flex flex-col justify-start items-start gap-2">
+          <div class="self-stretch flex flex-col justify-start items-start gap-2">
+            <div class="self-stretch inline-flex justify-between items-start">
+              <div class="justify-center text-black text-base font-bold font-['Inter'] leading-6">Pich Solyka
+              </div>
+              <div class="opacity-20 text-right justify-center text-black text-sm font-medium font-['Inter'] leading-4">
+                24 January,2023</div>
+            </div>
+            <div class="inline-flex justify-center items-center">
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+              <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+            </div>
+          </div>
+          <div class="self-stretch justify-start text-zinc-500 text-base font-medium leading-6">I might be the only one
+            to say this but the camera is a little funky. Hoping it will change with a software update: otherwise, love
+            this phone! Came in great condition ❤️❤️❤️❤️❤️❤️</div>
+        </div>
+      </section>
+    </section>
+  </main>
   <footer>
-  <div class="self-stretch px-50 py-24 bg-black flex flex-col justify-center items-start gap-6">
-    <!-- Top content -->
-    <div class="self-stretch flex justify-between items-start flex-wrap">
-      <!-- Logo and description -->
-      <div class="flex flex-col gap-6">
-        <div class="flex items-center">
-          <span class="text-white font-semibold text-xl">Cyber</span>
+    <div class="self-stretch px-50 py-24 bg-black flex flex-col justify-center items-start gap-6">
+      <!-- Top content -->
+      <div class="self-stretch flex justify-between items-start flex-wrap">
+        <!-- Logo and description -->
+        <div class="flex flex-col gap-6">
+          <div class="flex items-center">
+            <span class="text-white font-semibold text-xl">Cyber</span>
+          </div>
+          <p class="w-96 text-stone-300 text-sm font-medium leading-6">
+            We are a residential interior design firm located in Portland. Our boutique-studio offers more than
+          </p>
         </div>
-        <p class="w-96 text-stone-300 text-sm font-medium leading-6">
-          We are a residential interior design firm located in Portland. Our boutique-studio offers more than
-        </p>
+
+        <!-- Links  to others...-->
+        <div class="w-[623px] flex justify-between">
+          <div class="w-72 flex flex-col gap-2">
+            <a href="" class="text-white text-base font-semibold leading-4">Services</a>
+            <a class="text-stone-300 text-sm leading-8" href="">Bonus program </a>
+            <a class="text-stone-300 text-sm leading-8" href="">Gift cards</a>
+            <a class="text-stone-300 text-sm leading-8" href="">Credit and payment</a>
+            <a class="text-stone-300 text-sm leading-8" href="">Service contracts</a>
+            <a class="text-stone-300 text-sm leading-8" href="">Non-cash account</a>
+            <a class="text-stone-300 text-sm leading-8" href="">Payment</a>
+          </div>
+          <div class="w-72 flex flex-col gap-2">
+            <a href="" class="text-white text-base font-semibold leading-4">Assistance to the buyer</a>
+            <a href="" class="text-stone-300 text-sm leading-8">Find an order</a>
+            <a href="" class="text-stone-300 text-sm leading-8">Terms of delivery</a>
+            <a href="text-stone-300 text-sm leading-8">Exchange and return of goods</a>
+            <a href="" class="text-stone-300 text-sm leading-8">Guarantee</a>
+            <a href="" class="text-stone-300 text-sm leading-8">Frequently asked questions</a>
+            <a href="" class="text-stone-300 text-sm leading-8">Terms of use of the site</a>
+          </div>
+        </div>
       </div>
 
-      <!-- Links  to others...-->
-      <div class="w-[623px] flex justify-between">
-        <div class="w-72 flex flex-col gap-2">
-      <a href="" class="text-white text-base font-semibold leading-4">Services</a>
-      <a  class="text-stone-300 text-sm leading-8" href="">Bonus program </a>
-          <a class="text-stone-300 text-sm leading-8" href="">Gift cards</a>
-          <a class="text-stone-300 text-sm leading-8" href="">Credit and payment</a>
-          <a class="text-stone-300 text-sm leading-8" href="">Service contracts</a>
-          <a class="text-stone-300 text-sm leading-8" href="">Non-cash account</a>
-          <a class="text-stone-300 text-sm leading-8" href="">Payment</a>
-        </div>
-        <div class="w-72 flex flex-col gap-2">
-          <a href=""  class="text-white text-base font-semibold leading-4">Assistance to the buyer</a>
-          <a href="" class="text-stone-300 text-sm leading-8">Find an order</a>
-          <a  href="" class="text-stone-300 text-sm leading-8">Terms of delivery</a>
-          <a  href="text-stone-300 text-sm leading-8">Exchange and return of goods</a>
-          <a  href="" class="text-stone-300 text-sm leading-8">Guarantee</a>
-          <a href=""  class="text-stone-300 text-sm leading-8">Frequently asked questions</a>
-          <a href=""  class="text-stone-300 text-sm leading-8">Terms of use of the site</a>
-        </div>
+      <!-- Social icons -->
+      <div class="flex gap-4">
+        <a href="#" aria-label="Facebook">
+          <img src="/src/icon/fb.png" alt="Facebook Icon" class="w-6 h-6 " />
+        </a>
+        <a href="#" aria-label="Twitter">
+          <img src="/src/icon/twitter.png" alt="Twitter Icon" class="w-6 h-6" />
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="/src/icon/instagram.png" alt="Instagram Icon" class="w-6 h-6" />
+        </a>
+        <a href="#" aria-label="tiktok">
+          <img src="/src/icon/tik-tok.png" alt="tiktok Icon" class="w-6 h-6" />
+        </a>
       </div>
     </div>
-
-    <!-- Social icons -->
-    <div class="flex gap-4">
-      <a href="#" aria-label="Facebook">
-        <img src="/src/icon/fb.png" alt="Facebook Icon" class="w-6 h-6 " />
-      </a>
-      <a href="#" aria-label="Twitter">
-        <img src="/src/icon/twitter.png" alt="Twitter Icon" class="w-6 h-6" />
-      </a>
-      <a href="#" aria-label="Instagram">
-        <img src="/src/icon/instagram.png" alt="Instagram Icon" class="w-6 h-6" />
-      </a>
-      <a href="#" aria-label="tiktok">
-        <img src="/src/icon/tik-tok.png" alt="tiktok Icon" class="w-6 h-6" />
-      </a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 
-</body>
-</html>  
+  </body>
+
+</html>
